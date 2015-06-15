@@ -16,14 +16,14 @@ import java.util.List;
 public class Time {
     
     private HashMap<String, Jogador> jogadores;
-    private ArrayList<Jogador> time;
+    private List<Jogador> time;
     
     public Time() {
         jogadores = new HashMap<>();
         time = new ArrayList<>();
     }
     
-    public ArrayList<Jogador> ordena(JogadorComparator comparador) {
+    public List<Jogador> ordena(JogadorComparator comparador) {
         time.sort(comparador);
         return time;
     }
@@ -32,7 +32,7 @@ public class Time {
         time.add(jogador);
     }
     
-    public ArrayList<Jogador> getTime() {
+    public List<Jogador> getTime() {
         return time;
     }
     

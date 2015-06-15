@@ -1,6 +1,7 @@
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.List;
 import utfpr.ct.dainf.if62c.pratica.Jogador;
 import utfpr.ct.dainf.if62c.pratica.JogadorComparator;
 import utfpr.ct.dainf.if62c.pratica.Time;
@@ -26,7 +27,7 @@ public class Pratica62 {
         time.addJogador(new Jogador(12, "Júlio Velasquez"));
         time.addJogador(new Jogador(12, "Zuleico"));
         
-        ArrayList<Jogador> timeOrdenado = time.ordena(inspetor);
+        List<Jogador> timeOrdenado = time.ordena(inspetor);
         for (Jogador j : timeOrdenado) {
             System.out.println(j);
         }
